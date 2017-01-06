@@ -38,7 +38,7 @@ logging:
   level: error
 
 ---
-spring: 
- profiles: prod
+spring:
+ profiles: dev
 
 weather: 2299
