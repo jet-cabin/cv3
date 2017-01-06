@@ -1,0 +1,44 @@
+spring:
+    application:
+        name: user-service
+    redis:
+        host: 192.168.50.128
+        port: 6379
+        database: 0
+        pool:
+            max-active: 10
+            max-wait: 10
+            max-idle: 8
+        timeout: 0
+server:
+    port: 8080
+datasource:
+    url: jdbc:mysql://192.168.50.128:3306/users?useUnicode=true&characterEncoding=utf8
+    driverclass: com.mysql.jdbc.Driver
+    username: admin
+    password: admin
+eureka:
+    instance:
+        preferIpAddress: true
+    client:
+        serviceUrl:
+            defaultZone: http://192.168.50.128:8761/eureka/,http://192.168.50.128:8762/eureka/
+        healthCheck:
+            enable: true
+management:
+  port: 12222
+  health:
+    refresh:
+      enabled: true
+info:
+    app:
+        name: "user"
+
+logging:
+  level: error
+
+---
+spring: 
+ profiles: prod
+
+weather: 2299
