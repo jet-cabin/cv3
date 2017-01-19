@@ -1,5 +1,7 @@
 spring:
     profiles: prod
+    application: 
+        name: windy
 server:
     port: 9999
 eureka:
