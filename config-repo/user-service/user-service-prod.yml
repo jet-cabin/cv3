@@ -47,4 +47,4 @@ logging:
 spring: 
  profiles: prod
 
-weather: "aloha jet22" 
+weather: "aloha jet122" 
