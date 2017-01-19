@@ -17,7 +17,7 @@ spring:
             max-idle: 8
         timeout: 0
 server:
-    port: 8080
+    port: 9999
 datasource:
     url: jdbc:mysql://192.168.50.128:3306/users?useUnicode=true&characterEncoding=utf8
     driverclass: com.mysql.jdbc.Driver
