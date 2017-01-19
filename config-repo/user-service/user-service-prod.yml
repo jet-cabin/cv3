@@ -47,4 +47,4 @@ logging:
 spring: 
  profiles: prod
 
-weather: 1199
+weather: 2299
