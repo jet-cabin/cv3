@@ -1,0 +1,11 @@
+spring:
+    profiles: prod
+server:
+    port: 9999
+eureka:
+    instance:
+         instanceId: ${random.value}
+         prefer-ip-address: true
+    client:
+        serviceUrl:
+            defaultZone: ${EUREKA_SERVER_LIST}
