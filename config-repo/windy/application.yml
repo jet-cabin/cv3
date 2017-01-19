@@ -4,7 +4,7 @@ server:
     port: 9999
 eureka:
     instance:
-         instanceId: ${Random.value}
+         instanceId: ${random.value}
          prefer-ip-address: true
     client:
         serviceUrl:
