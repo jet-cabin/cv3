@@ -1,5 +1,7 @@
 spring:
     profiles: prod
+    application: 
+        name: tenant
 server:
     port: 9999
 eureka:
