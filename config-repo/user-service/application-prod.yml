@@ -1,6 +1,12 @@
 spring:
     application:
         name: user-service
+    config: 
+        stream:
+            kafka:
+                binder:
+                    zkNodes: 192.168.50.128:2181
+                    brokers: 192.168.50.128:9092
     redis:
         host: 192.168.50.128
         port: 6379
