@@ -47,4 +47,4 @@ logging:
 spring: 
  profiles: prod
 
-weather: "bonjour 1112 jet" 
+weather: "bonjour jet" 
