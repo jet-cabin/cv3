@@ -5,10 +5,10 @@ spring:
         stream:
             kafka:
                 binder:
-                    zkNodes: 192.168.50.128:2181
-                    brokers: 192.168.50.128:9092
+                    zkNodes: 10.1.67.188:2181
+                    brokers: 10.1.67.188:9092
     redis:
-        host: 192.168.50.128
+        host: 10.1.67.188
         port: 6379
         database: 0
         pool:
@@ -19,7 +19,7 @@ spring:
 server:
     port: 9999
 datasource:
-    url: jdbc:mysql://192.168.50.128:3306/users?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://10.1.67.188:3306/users?useUnicode=true&characterEncoding=utf8
     driverclass: com.mysql.jdbc.Driver
     username: admin
     password: admin
@@ -28,7 +28,7 @@ eureka:
         preferIpAddress: true
     client:
         serviceUrl:
-            defaultZone: http://192.168.50.128:8761/eureka/,http://192.168.50.128:8762/eureka/
+            defaultZone: http://10.1.67.188:8761/eureka/,http://10.1.67.188:8762/eureka/
         healthCheck:
             enable: true
 management:
