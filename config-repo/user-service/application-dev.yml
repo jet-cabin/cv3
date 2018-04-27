@@ -2,7 +2,7 @@ spring:
     #application:
         #name: user-service
     redis:
-        host: 192.168.50.128
+        host: 10.1.67.188
         port: 6379
         database: 0
         pool:
@@ -22,7 +22,7 @@ eureka:
         preferIpAddress: true
     client:
         serviceUrl:
-            defaultZone: http://192.168.50.128:8761/eureka/,http://192.168.50.128:8762/eureka/
+            defaultZone: http://10.1.67.188:8761/eureka/,http://10.1.67.188:8762/eureka/
         healthCheck:
             enable: true
 management:
